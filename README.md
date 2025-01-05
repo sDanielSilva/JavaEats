@@ -4,70 +4,52 @@
   <img src="img/javaetas-removebg-preview.png" alt="Capa do projeto" width="300px">
 </p>
 
-> O JavaEats é um POS System, desenvolvido como parte integrante do projeto temático em desenvolvimento de aplicações associado à Licenciatura em Tecnologias da Informação. Trata-se de uma aplicação de gestão para estabelecimentos na área da restauração, desenvolvida em Java, com o objetivo de otimizar e simplificar processos como gestão de pedidos, reservas, pagamentos, faturação, entre outros. O projeto inclui a criação de um website complementar que oferece uma visão abrangente do ecossistema criado para otimizar a gestão de restaurantes, destacando as funcionalidades chave da aplicação. Além disso, o JavaEats oferece a opção de substituir o tradicional método de login por uma abordagem inovadora com tags RFID, visando simplificar o processo de login para os funcionários.
+# **JavaEats - Sistema de Gestão para Restaurantes**
 
-### Ajustes e melhorias
+O JavaEats é uma aplicação desenvolvida como parte integrante do Projeto Temático em Desenvolvimento de Aplicações da Licenciatura em Tecnologias da Informação da Escola Superior de Tecnologia e Gestão de Águeda (ESTGA) da Universidade de Aveiro. Este sistema de gestão para estabelecimentos de restauração foi projetado para otimizar e simplificar processos como gestão de pedidos, reservas, pagamentos, faturação e muito mais.
 
-O projeto está concluído, e foram realizadas as seguintes tarefas:
+## **🚀 Objetivos do Projeto**
+- **Eficiência Operacional**: Automatizar processos de pedidos, reservas e pagamentos, minimizando erros e aumentando a produtividade.
+- **Gestão Simplificada**: Fornecer aos gerentes uma visão clara e centralizada do estado do restaurante, com dashboards intuitivos.
+- **Estatísticas e Relatórios**: Disponibilizar ferramentas de análise para uma gestão baseada em dados, incluindo gráficos de vendas, popularidade de itens e métodos de pagamento utilizados.
+- **Inovação**: Implementar login por tags RFID, substituindo métodos tradicionais e proporcionando maior comodidade.
 
-- [x] Tema do projeto
-- [x] Fase I - Planeamento do Projeto
-- [x] Fase II - Desenho do Sistema
-- [x] Fase III - Implementação
-- [x] Desenvolvimento da aplicação
-- [x] Testes e debug
-- [x] Análise de resultados e documentação
-- [x] Conclusões
+---
 
-## 💻 Pré-requisitos
+## **💻 Pré-requisitos**
+Antes de começar, certifique-se de que possui:
+- **Java JDK**: [Download Java JDK](https://www.oracle.com/java/technologies/downloads/)
+- **Java Runtime Environment (JRE)**: [Download Java](https://www.java.com/pt-BR/download/ie_manual.jsp?locale=pt_BR)
 
-Antes de fazer ```clone``` do repositório, verifique se você atendeu aos seguintes requisitos:
+---
 
-* Você instalou a versão mais recente do `Java JDK` e do `Java`;
-* Você leu a `documentação relacionada ao projeto>`;
+## **📦 Instalação do JavaEats**
+### **Método 1: Executável**
+1. Aceda ao site: [JavaEats Website](https://kodelabs.me/JavaEats/)
+2. Faça o download do instalador.
+3. Extraia o ficheiro `JavaEats.zip` e execute o instalador.
 
-Links das dependências necessárias:<br>
-`Java` https://www.java.com/pt-BR/download/ie_manual.jsp?locale=pt_BR<br>
-`Java JDK` https://www.oracle.com/java/technologies/downloads/
+### **Método 2: Código Fonte**
 
-## 🚀 Instalar <Aplicação - JavaEats>
-Para instalar a <Aplicação - JavaEats>, siga estas etapas:
-
-Entre no site:
-https://lucasduarte2.github.io/JavaEats/
-
-Carregue no botão `Download`
-
-Execute o ficheiro `exe`, que se encontra dentro da pasta `JavaEats`
-
--------------------------
-
-<b>Para instalar a <Aplicação - JavaEats> com o código fonte, siga estas etapas:</b>
-
-Linux e macOS:
-```
-git clone --single-branch --branch desenvolvimento https://github.com/lucasduarte2/JavaEats.git
+```bash
+git clone --single-branch --branch desenvolvimento https://github.com/sDanielSilva/JavaEats.git
 ```
 
-Windows:
-```
-git clone --single-branch --branch desenvolvimento https://github.com/lucasduarte2/JavaEats.git
-```
+---
 
+## **🔧 Funcionalidades Chave**
+- **Gestão de Mesas**: Acompanhe o estado de cada mesa em tempo real (disponível, ocupada, reservada).
+- **Gestão de Pedidos**: Permite aos funcionários inserir e editar pedidos rapidamente.
+- **Pagamentos Automatizados**: Cálculo automático de totais, troco e divisão de despesas.
+- **Estatísticas Detalhadas**: Gráficos de faturação e análises por categoria ou item.
+- **Interface Intuitiva**: Desenvolvida com JavaFX, garantindo usabilidade para todos os níveis de utilizadores.
 
+---
 
-## 📫 Contribuir para <Aplicação - JavaEats>
-
-Para contribuir com <Aplicação - JavaEats>, siga estas etapas:
-
-<b>No seu terminal, ou no seu IDE, faça os seguintes comandos.</b>
-1. `git clone --single-branch --branch desenvolvimento https://github.com/lucasduarte2/JavaEats.git`
-2. `git status` - visualiza as alterações feitas dentro do projeto
-3. `git add .` - adiciona todos os ficheiros modificados
-4. `git commit -m '<mensagem_commit>'` - mensagem do seu commit
-5. `git push` envia as suas alterações para o repositório
-
-Como alternativa, consulte a documentação do GitHub em [Sobre o Git](https://docs.github.com/pt/get-started/using-git/about-git).
+## 📝 Documentação
+Veja o ficheiro [**JavaEats.pdf**](JavaEats.pdf) para mais informações e detalhes.
+  
+---
 
 ## 🤝 Colaboradores
 
@@ -117,8 +99,3 @@ Colaboradores que fizeram parte deste projeto:
     </td>
   </tr>
 </table>
-
-## 📝 Documentação
-
-Veja o arquivo [Documentação](documentacao.md) para mais detalhes.
-Veja o arquivo [LICENSE](LICENSE) para mais detalhes.

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ua.pt.javaeats.DashboardFecharConta.DashboardFecharContaController">
+   <children>
+      <Pane onMouseClicked="#pagarComCartao" layoutX="1450.0" layoutY="850.0" prefHeight="100.0" prefWidth="450.0" style="-fx-background-color: #38B0DE;">
+         <children>
+            <ImageView fitHeight="60.0" fitWidth="80.0" layoutX="190.0" layoutY="20.0">
+               <image>
+                  <Image url="@Images/sem-contato.png" />
+               </image>
+            </ImageView>
+         </children></Pane>
+      <Pane layoutX="30.0" layoutY="140.0" prefHeight="700.0" prefWidth="900.0" style="-fx-background-color: #38B0DE;">
+         <children>
+            <TableView fx:id="tableViewFecharConta" prefHeight="600.0" prefWidth="900.0">
+               <columns>
+                  <TableColumn fx:id="produtoColumnFecharConta" prefWidth="300.0" text="Produto" />
+                  <TableColumn fx:id="quantidadeColumnFecharConta" minWidth="0.0" prefWidth="300.0" text="Quantidade" />
+                  <TableColumn fx:id="precoColumnFecharConta" prefWidth="300.0" text="Preço" />
+               </columns>
+            </TableView>
+            <Label layoutX="190.0" layoutY="630.0" text="TOTAL">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Separator layoutX="450.0" layoutY="600.0" orientation="VERTICAL" prefHeight="100.0" />
+            <Label fx:id="labelTotal" layoutX="675.0" layoutY="630.0" prefHeight="25.0">
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
+         </children>
+      </Pane>
+      <Pane layoutX="1000.0" layoutY="140.0" prefHeight="700.0" prefWidth="900.0" style="-fx-background-color: #38B0DE;">
+         <children>
+            <TableView fx:id="tableViewFecharConta2" prefHeight="600.0" prefWidth="900.0">
+               <columns>
+                  <TableColumn fx:id="produtoColumnFecharConta2" prefWidth="300.0" text="Produto" />
+                  <TableColumn fx:id="quantidadeColumnFecharConta2" minWidth="0.0" prefWidth="300.0" text="Quantidade" />
+                  <TableColumn fx:id="precoColumnFecharConta2" prefWidth="300.0" text="Preço" />
+               </columns>
+            </TableView>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="190.0" layoutY="630.0" text="TOTAL" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Separator layoutX="450.0" layoutY="600.0" orientation="VERTICAL" prefHeight="100.0" />
+            <Label fx:id="labelTotal2" layoutX="675.0" layoutY="630.0" prefHeight="25.0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="1000.0" layoutY="850.0" onMouseClicked="#pagarComDinheiro" prefHeight="100.0" prefWidth="450.0" style="-fx-background-color: #38B0DE;">
+         <children>
+            <ImageView fitHeight="60.0" fitWidth="80.0" layoutX="190.0" layoutY="20.0">
+               <image>
+                  <Image url="@Images/moeda-de-dinheiro.png" />
+               </image>
+            </ImageView>
+            <Separator layoutX="450.0" orientation="VERTICAL" prefHeight="100.0" />
+         </children>
+      </Pane>
+      <Pane fx:id="voltar_menu_pedido_mesa" layoutX="30.0" layoutY="20.0" onMouseClicked="#voltar_menu_pedido_mesa" prefHeight="50.0" prefWidth="140.0" style="-fx-background-color: #38B0DE;">
+         <children>
+            <Label layoutX="50.0" layoutY="13.0" text="VOLTAR" textAlignment="CENTER">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="10.0" layoutY="10.0" rotate="180.0">
+               <image>
+                  <Image url="@Images/seta-direita-grande.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="760.0" layoutY="20.0" prefHeight="100.0" prefWidth="400.0">
+         <children>
+            <Button layoutX="20.0" layoutY="55.0" mnemonicParsing="false" onAction="#moverParaDireita" prefHeight="40.0" prefWidth="150.0" text="&gt;" />
+            <Button layoutX="240.0" layoutY="55.0" mnemonicParsing="false" onAction="#moverParaEsquerda" prefHeight="40.0" prefWidth="150.0" text="&lt;" />
+            <Button layoutX="20.0" mnemonicParsing="false" onAction="#moverTodosParaDireita" prefHeight="40.0" prefWidth="150.0" text="Mover todos &gt;" />
+            <Button layoutX="240.0" mnemonicParsing="false" onAction="#moverTodosParaEsquerda" prefHeight="40.0" prefWidth="150.0" text="&lt; Mover todos" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

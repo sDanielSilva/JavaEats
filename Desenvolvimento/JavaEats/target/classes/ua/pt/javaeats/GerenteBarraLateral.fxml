@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+
+<?import java.lang.String?>
+<BorderPane fx:id="layoutPrincipal" stylesheets="@CSS/barraLateral.css" fx:controller="ua.pt.javaeats.dashboardGerente.GerenteBarraLateralController"
+            xmlns:fx="http://javafx.com/fxml">
+    <left>
+        <VBox prefHeight="400.0" prefWidth="150.0" style="-fx-background-color: #67c2ff; -fx-padding: 10px; -fx-spacing: 10px">
+            <children>
+                <Button fx:id="btnVerRestaurante" mnemonicParsing="false" prefHeight="50.0" prefWidth="130.0" style=" -fx-text-fill: #67c2ff; -fx-border-radius: 15; -fx-background-radius: 15;">
+                    <graphic>
+                        <ImageView fitHeight="30" fitWidth="30">
+                            <Image url="@Images/eye.png"/>
+                        </ImageView>
+                    </graphic>
+                    <styleClass>
+                        <String fx:value="button"/>
+                    </styleClass>
+                </Button>
+                <Button fx:id="btnVerCozinha" mnemonicParsing="false" prefHeight="50.0" prefWidth="130.0" style=" -fx-text-fill: #67c2ff; -fx-border-radius: 15; -fx-background-radius: 15;">
+                    <graphic>
+                        <ImageView fitHeight="30" fitWidth="30">
+                            <Image url="@Images/cutlery.png"/>
+                        </ImageView>
+                    </graphic>
+                    <styleClass>
+                        <String fx:value="button"/>
+                    </styleClass>
+                </Button>
+                <Button fx:id="btnGerirFuncionarios" mnemonicParsing="false" prefHeight="50.0" prefWidth="130.0" style=" -fx-text-fill: #67c2ff; -fx-border-radius: 15; -fx-background-radius: 15;">
+                    <graphic>
+                        <ImageView fitHeight="30" fitWidth="30">
+                            <Image url="@Images/group.png"/>
+                        </ImageView>
+                    </graphic>
+                    <styleClass>
+                        <String fx:value="button"/>
+                    </styleClass>
+                </Button>
+                <Button fx:id="btnGerirCategorias" mnemonicParsing="false" prefHeight="50.0" prefWidth="130.0" style=" -fx-text-fill: #67c2ff; -fx-border-radius: 15; -fx-background-radius: 15;">
+                    <graphic>
+                        <ImageView fitHeight="30" fitWidth="30">
+                            <Image url="@Images/multimedia.png"/>
+                        </ImageView>
+                    </graphic>
+                    <styleClass>
+                        <String fx:value="button"/>
+                    </styleClass>
+                </Button>
+                <Button fx:id="btnGerirItens" mnemonicParsing="false" prefHeight="50.0" prefWidth="130.0" style=" -fx-text-fill: #67c2ff; -fx-border-radius: 15; -fx-background-radius: 15;">
+                    <graphic>
+                        <ImageView fitHeight="30" fitWidth="30">
+                            <Image url="@Images/checklist.png"/>
+                        </ImageView>
+                    </graphic>
+                    <styleClass>
+                        <String fx:value="button"/>
+                    </styleClass>
+                </Button>
+                <Button fx:id="btnZonas" mnemonicParsing="false" prefHeight="50.0" prefWidth="130.0" style=" -fx-text-fill: #67c2ff; -fx-border-radius: 15; -fx-background-radius: 15;">
+                    <graphic>
+                        <ImageView fitHeight="30" fitWidth="30">
+                            <Image url="@Images/location.png"/>
+                        </ImageView>
+                    </graphic>
+                    <styleClass>
+                        <String fx:value="button"/>
+                    </styleClass>
+                </Button>
+                <Button fx:id="btnGerirMesas" mnemonicParsing="false" prefHeight="50.0" prefWidth="130.0" style=" -fx-text-fill: #67c2ff; -fx-border-radius: 15; -fx-background-radius: 15;">
+                    <graphic>
+                        <ImageView fitHeight="30" fitWidth="30">
+                            <Image url="@Images/table.png"/>
+                        </ImageView>
+                    </graphic>
+                    <styleClass>
+                        <String fx:value="button"/>
+                    </styleClass>
+                </Button>
+                <Button fx:id="btnGerirCargo" mnemonicParsing="false" prefHeight="50.0" prefWidth="130.0" style=" -fx-text-fill: #67c2ff; -fx-border-radius: 15; -fx-background-radius: 15;">
+                    <graphic>
+                        <ImageView fitHeight="30" fitWidth="30">
+                            <Image url="@Images/pyramidal.png"/>
+                        </ImageView>
+                    </graphic>
+                    <styleClass>
+                        <String fx:value="button"/>
+                    </styleClass>
+                </Button>
+                <Button fx:id="btnRelatorios" mnemonicParsing="false" prefHeight="50.0" prefWidth="130.0" style=" -fx-text-fill: #67c2ff; -fx-border-radius: 15; -fx-background-radius: 15;">
+                    <graphic>
+                        <ImageView fitHeight="30" fitWidth="30">
+                            <Image url="@Images/profit-report.png"/>
+                        </ImageView>
+                    </graphic>
+                    <styleClass>
+                        <String fx:value="button"/>
+                    </styleClass>
+                </Button>
+                <Button fx:id="btnSair" mnemonicParsing="false" prefHeight="50.0" prefWidth="130.0" style=" -fx-text-fill: #67c2ff; -fx-border-radius: 15; -fx-background-radius: 15;">
+                    <graphic>
+                        <ImageView fitHeight="30" fitWidth="30">
+                            <Image url="@Images/exit.png"/>
+                        </ImageView>
+                    </graphic>
+                    <styleClass>
+                        <String fx:value="button"/>
+                    </styleClass>
+                </Button>
+
+            </children>
+        </VBox>
+    </left>
+    <center>
+        <AnchorPane prefHeight="400.0" prefWidth="600.0">
+        </AnchorPane>
+    </center>
+</BorderPane>
+
+
+
+
+

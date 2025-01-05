@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ua.pt.javaeats.dashboardGerente.DashboardGerenteController">
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="300.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/javaetas-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="gerirFuncionario" layoutX="234.0" layoutY="248.0" mnemonicParsing="false" onAction="#gerirFuncionario" prefHeight="104.0" prefWidth="150.0" text="Gerir Funcionários">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="gerirMesas" layoutX="418.0" layoutY="248.0" mnemonicParsing="false" onAction="#gerirMesas" prefHeight="104.0" prefWidth="150.0" text="Gerir Mesas">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="gerirCategorias" layoutX="50.0" layoutY="248.0" mnemonicParsing="false" onAction="#handleGerirCategorias" prefHeight="104.0" prefWidth="150.0" text="Gerir Categorias">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="gerirItems" layoutX="600.0" layoutY="248.0" mnemonicParsing="false" onAction="#handleGerirItem" prefHeight="104.0" prefWidth="150.0" text="Gerir Items">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="verRestaurante" layoutX="325.0" layoutY="390.0" mnemonicParsing="false" onAction="#verRestaurante" prefHeight="104.0" prefWidth="150.0" text="Ver Restaurante">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="imgSair" fitHeight="93.0" fitWidth="104.0" layoutX="682.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/sair_copy-removebg-preview.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

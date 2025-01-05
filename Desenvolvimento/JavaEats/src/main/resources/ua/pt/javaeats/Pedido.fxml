@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ua.pt.javaeats.dashboardPedido.DashboardPedidoController">
+    <children>
+        <Pane layoutX="970.0" layoutY="750.0" prefHeight="100.0" prefWidth="900.0" style="-fx-background-color: #00009C;">
+            <children>
+                <Label layoutX="380.0" layoutY="25.0" prefHeight="50.0" prefWidth="150.0" text="    Total" textAlignment="CENTER" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="24.0" />
+                    </font>
+                </Label>
+                <Label fx:id="labelTotalPedido" layoutX="750.0" layoutY="35.0" prefHeight="25.0" textFill="WHITE">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Label>
+            <Separator layoutX="600.0" orientation="VERTICAL" prefHeight="100.0" />
+            </children>
+        </Pane>
+        <Pane layoutX="970.0" layoutY="850.0" prefHeight="100.0" prefWidth="900.0" style="-fx-background-color: #38B0DE;">
+            <children>
+                <Button layoutX="325.0" layoutY="25.0" onAction="#adicionarItem" prefHeight="50.0" prefWidth="250.0" text="Adicionar" />
+                <Button layoutX="25.0" layoutY="25.0" onAction="#removerItem" prefHeight="50.0" prefWidth="250.0" text="Remover" />
+                <Button layoutX="625.0" layoutY="25.0" onAction="#confirmarItens" prefHeight="50.0" prefWidth="250.0" text="Confirmar" />
+            </children>
+        </Pane>
+        <Pane layoutX="970.0" layoutY="30.0" prefHeight="100.0" prefWidth="900.0" style="-fx-background-color: #38B0DE;">
+            <children>
+                <Label layoutX="325.0" layoutY="25.0" text="MESA">
+                    <font>
+                        <Font name="System Bold" size="40.0" />
+                    </font>
+                </Label>
+                <Label fx:id="numeroMesa" alignment="CENTER" layoutX="460.0" layoutY="30.0" prefHeight="40.0" prefWidth="100.0">
+                    <font>
+                        <Font name="System Bold" size="32.0" />
+                    </font>
+                </Label>
+            </children>
+        </Pane>
+
+        <TableView fx:id="tableView" layoutX="970.0" layoutY="150.0" prefHeight="600.0" prefWidth="900.0">
+            <columns>
+                <TableColumn fx:id="produtoColumn" prefWidth="300.0" text="Produto" />
+                <TableColumn fx:id="quantidadeColumn" prefWidth="300.0" text="Quantidade" />
+                <TableColumn fx:id="precoColumn" prefWidth="300.0" text="Preço" />
+            </columns>
+        </TableView>
+        <Pane fx:id="categoriaPane" layoutX="70.0" layoutY="150.0" prefHeight="100.0" prefWidth="860.0">
+            <!-- Os botões das categorias serão adicionados dinamicamente aqui -->
+        </Pane>
+        <Pane fx:id="itemsMostrar" layoutX="70.0" layoutY="275.0" prefHeight="475.0" prefWidth="860.0" />
+        <TextField fx:id="pesquisarItem" layoutX="70.0" layoutY="775.0" prefHeight="50.0" prefWidth="860.0" promptText="Pesquisar item..." />
+        <Pane layoutX="50.0" layoutY="850.0" prefHeight="100.0" prefWidth="900.0">
+            <children>
+                <Button layoutX="240.0" layoutY="20.0" mnemonicParsing="false" onAction="#consultaDeMesa" prefHeight="60.0" prefWidth="200.0" text="Consulta de Mesa" textAlignment="CENTER" wrapText="true" />
+                <Button layoutX="460.0" layoutY="20.0" mnemonicParsing="false" onAction="#abrirInterfaceFecharConta" prefHeight="60.0" prefWidth="200.0" text="Fechar Conta" textAlignment="CENTER" wrapText="true" />
+                <Button layoutX="680.0" layoutY="20.0" mnemonicParsing="false" onAction="#imprimir2avia" prefHeight="60.0" prefWidth="200.0" text="Imprimir 2º via recibo" textAlignment="CENTER" wrapText="true" />
+                <Button layoutX="20.0" layoutY="20.0" mnemonicParsing="false" onAction="#transferirMesas" prefHeight="60.0" prefWidth="200.0" text="Transferir Mesa" textAlignment="CENTER" wrapText="true" />
+            </children>
+        </Pane>
+        <Pane fx:id="voltar_menu_mesas" layoutX="70.0" layoutY="30.0" onMouseClicked="#voltar_menu_mesas" prefHeight="100.0" prefWidth="175.0" style="-fx-background-color: #38B0DE;">
+            <children>
+                <Label layoutX="70.0" layoutY="13.0" text="VOLTAR" textAlignment="CENTER">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Label>
+                <ImageView fitHeight="66.0" fitWidth="70.0" layoutX="52.0" layoutY="33.0">
+                    <image>
+                        <Image url="@Images/mesa-e-cadeiras-de-restaurante.png" />
+                    </image>
+                </ImageView>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="20.0" layoutY="10.0" rotate="180.0">
+               <image>
+                  <Image url="@Images/seta-direita-grande.png" />
+               </image>
+            </ImageView>
+            </children>
+        </Pane>
+      <Pane layoutX="470.0" layoutY="30.0" prefHeight="100.0" prefWidth="460.0" style="-fx-background-color: #38B0DE;">
+         <children>
+            <Label fx:id="mostrarReserva" layoutX="14.0" layoutY="45.0" prefHeight="40.0" prefWidth="432.0" underline="true">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Label>
+            <Label layoutX="14.0" layoutY="14.0" text="Próxima Reserva:" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+    </children>
+</AnchorPane>

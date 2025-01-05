@@ -1,0 +1,4 @@
+--patch-module
+ua.pt.javaeats=_
+--add-reads
+ua.pt.javaeats=ALL-UNNAMED

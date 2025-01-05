@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="ua.pt.javaeats.dashboardPrincipal.DashboardController">
+    <HBox alignment="CENTER">
+        <ImageView fitHeight="70.0" fitWidth="140.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@Images/javaetas-removebg-preview.png" />
+            </image>
+        </ImageView>
+    </HBox>
+    <ScrollPane fitToWidth="true">
+        <FlowPane fx:id="funcionarioPane" hgap="10" vgap="10"
+                  alignment="TOP_CENTER"
+                  prefWrapLength="200"
+                  style="-fx-padding: 10;">
+        </FlowPane>
+    </ScrollPane>
+</VBox>

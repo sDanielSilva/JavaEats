@@ -1,0 +1,13 @@
+.button {
+    -fx-background-color: #ffffff;
+}
+
+
+.button:focused {
+    -fx-background-color: #d3d3d3;
+    -fx-background-insets: 0;
+}
+
+.buttonsair {
+    -fx-background-color: #67c2ff;
+}
